@@ -14,7 +14,7 @@ useEffect(()=>{
   return (
     <div>
         <h1>Product dashboard</h1>
-        <p>{product.id}</p>
+        <p>{JSON.stringify(product)}</p>
     </div>
   )
 }
