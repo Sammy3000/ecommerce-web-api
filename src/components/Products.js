@@ -14,7 +14,7 @@ useEffect(()=>{
   return (
     <div>
         <h1>Product dashboard</h1>
-        <p>{product}</p>
+        <p>{product.id}</p>
     </div>
   )
 }
