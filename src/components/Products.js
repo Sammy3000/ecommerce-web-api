@@ -14,6 +14,7 @@ useEffect(()=>{
   return (
     <div>
         <h1>Product dashboard</h1>
+        <p>{product}</p>
     </div>
   )
 }
