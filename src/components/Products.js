@@ -22,9 +22,9 @@ useEffect(()=>{
       <Card.Body>
         <Card.Title>{prod.title}</Card.Title>
         <Card.Text>
-          {prod.price}
+          $: {prod.price}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Add to Cart</Button>
       </Card.Body>
     </Card>
 
