@@ -20,7 +20,7 @@ useEffect(()=>{
           <Card.Img variant="top" src={prod.image} style = {{width:'100px' , height: '125px'}}/>
         </div>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>{prod.title}</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
