@@ -24,8 +24,10 @@ useEffect(()=>{
         <Card.Text>
           $: {prod.price}
         </Card.Text>
-        <Button variant="primary">Add to Cart</Button>
       </Card.Body>
+      <Card.Footer>
+       <Button variant="primary">Add to Cart</Button>
+      </Card.Footer>
     </Card>
 
     </div>
