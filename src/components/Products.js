@@ -16,7 +16,7 @@ useEffect(()=>{
   const cards = product.map(prod=> (
     <div className='col-md-3'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={prod.image}/>
+      <Card.Img variant="top" src={prod.image} style = {{width:'100px' , height: '125px'}}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
