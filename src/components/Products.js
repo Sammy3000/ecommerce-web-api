@@ -22,7 +22,7 @@ useEffect(()=>{
       <Card.Body>
         <Card.Title>{prod.title}</Card.Title>
         <Card.Text>
-          {prod.description}
+          {prod.price}
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
