@@ -30,10 +30,11 @@ useEffect(()=>{
   ))
 
   return (
-    <div>
-        <h1>Product dashboard</h1>
-        {/* <p>{JSON.stringify(product)}</p> */}
+    <>
+    <div className='row'>
+      {cards}
     </div>
+    </>
   )
 }
 
