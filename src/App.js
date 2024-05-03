@@ -9,8 +9,9 @@ import Products from "./components/Products";
 
 function App() {
    const router = createBrowserRouter(createRoutesFromElements(
-    <Route>
+    <Route path = '/' element = >
       <Route index element = {<Dashboard/>}></Route>
+      <Route path = '/cart' element = {<Cart/>}></Route>
     </Route>
    ))
 
