@@ -5,11 +5,12 @@ import { createBrowserRouter,createRoutesFromElements,RouterProvider } from 'rea
 import Dashboard from './components/Dashboard';
 import Cart from './components/Cart';
 import Products from "./components/Products";
+import Rootlayout from './components/Rootlayout';
 
 
 function App() {
    const router = createBrowserRouter(createRoutesFromElements(
-    <Route path = '/' element = >
+    <Route path = '/' element = {<Rootlayout/>}>
       <Route index element = {<Dashboard/>}></Route>
       <Route path = '/cart' element = {<Cart/>}></Route>
     </Route>
