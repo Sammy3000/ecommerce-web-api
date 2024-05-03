@@ -6,6 +6,12 @@ import Products from "./components/Products";
 
 
 function App() {
+   const router = createBrowserRouter(createRoutesFromElements(
+    <Route>
+      <Route></Route>
+    </Route>
+   ))
+
   return (
     <div>
     <Products/>
