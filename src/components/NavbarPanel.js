@@ -19,9 +19,6 @@ const NavbarPanel = () => {
           navbarScroll
         >
           <Nav.Link href="#action1">Product</Nav.Link>
-          <Nav.Link href="#" disabled>
-            Link
-          </Nav.Link>
         </Nav>
         <Form className="d-flex">
           <Form.Control
