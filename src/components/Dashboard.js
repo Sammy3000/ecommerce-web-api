@@ -1,8 +1,9 @@
+import Products from './Products'
 const Dashboard = ()=>{
 
     return(
         <>
-        <h2>This is a Dashboard</h2>
+         <Products/>
         </>
     )
 }
