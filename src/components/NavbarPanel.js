@@ -16,7 +16,7 @@ const NavbarPanel = () => {
         <Navbar.Toggle/>
         <Navbar.Collapse className='justify-content-end'>
             <Navbar.Text>
-            <Nav.Link to='/' as={Link} >My bag 0</Nav.Link>
+            <Nav.Link to='/Cart' as={Link} >My bag 0</Nav.Link>
             </Navbar.Text>
         </Navbar.Collapse>
     </Container>
