@@ -4,7 +4,7 @@ import './App.css';
 import { createBrowserRouter,createRoutesFromElements,RouterProvider, Route} from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import Cart from './components/Cart';
-import Products from "./components/Products";
+// import Products from "./components/Products";
 import Rootlayout from './components/Rootlayout';
 
 

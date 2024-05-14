@@ -4,6 +4,9 @@
    return(
       <>
       <h2>Navigation</h2>
+      <main>
+         <Outlet/>
+      </main>
      </>
    )
    
