@@ -14,7 +14,11 @@ const NavbarPanel = () => {
           <Nav.Link to='/' as={Link} >Products</Nav.Link>
         </Nav>
         <Navbar.Toggle/>
-        <Navbar.Collapse></Navbar.Collapse>
+        <Navbar.Collapse>
+            <Navbar.Text>
+            <Nav.Link to='/' as={Link} >My bag 0</Nav.Link>
+            </Navbar.Text>
+        </Navbar.Collapse>
     </Container>
   </Navbar>
   )
