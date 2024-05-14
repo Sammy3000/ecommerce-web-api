@@ -16,7 +16,7 @@ const NavbarPanel = () => {
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
-          <Nav.Link href="#action1">Product</Nav.Link>
+          <Nav.Link to='/' >Products</Nav.Link>
         </Nav>
       
       </Navbar.Collapse>
