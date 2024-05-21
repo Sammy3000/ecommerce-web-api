@@ -10,7 +10,7 @@ const Cart = ()=>{
         <>
         {/* <h2>Cart</h2> */}
         <div>
-            <button>You have clicked {count} times</button>
+            <button onClick={handleCount}>You have clicked {count} times</button>
         </div>
      
         </>
