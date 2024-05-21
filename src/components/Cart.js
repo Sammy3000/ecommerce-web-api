@@ -1,5 +1,7 @@
+import { useState } from "react"
+
 const Cart = ()=>{
-    
+    const [count,setCount] = useState(0)
 
     return(
         <>
