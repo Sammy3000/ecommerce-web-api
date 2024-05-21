@@ -1,4 +1,3 @@
-import { click } from "@testing-library/user-event/dist/click"
 import { useState } from "react"
 
 const Cart = ()=>{
@@ -10,7 +9,10 @@ const Cart = ()=>{
     return(
         <>
         {/* <h2>Cart</h2> */}
-       < Button>You have clicked {count}times</Button>
+        <div>
+            <button>You have clicked {count} times</button>
+        </div>
+     
         </>
     )
 }
