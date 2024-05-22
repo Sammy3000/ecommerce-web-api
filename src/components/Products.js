@@ -2,6 +2,7 @@ import React from 'react'
 import { useState,useEffect } from 'react'
 import { Card } from 'react-bootstrap'
 import {Button} from 'react-bootstrap'
+import { useDispatch } from 'react-redux'
 
 const Products = () => {
   const[product,getProduct]=useState([])
@@ -14,7 +15,7 @@ useEffect(()=>{
 },[])
 
 const addToCart = ()=>{
-  
+
 }
 
   const cards = product.map(prod=> (
