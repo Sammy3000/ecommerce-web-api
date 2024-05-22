@@ -6,10 +6,12 @@ import Store from "../store/Store"
  const Rootlayout = ()=>{
    return(
       <>
-      <NavbarPanel/>
-      <main>
-         <Outlet/>
-      </main>
+      <Provider store={Store}>
+        <NavbarPanel/>
+        <main>
+          <Outlet/>
+        </main>
+      </Provider>
      </>
    )
    
