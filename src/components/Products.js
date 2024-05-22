@@ -13,6 +13,10 @@ useEffect(()=>{
 
 },[])
 
+const addToCart = ()=>{
+  
+}
+
   const cards = product.map(prod=> (
     <div className='col-md-3'>
       <Card key={prod.id} className='h-100'>
