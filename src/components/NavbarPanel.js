@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 
 const NavbarPanel = () => {
 
-  const {cart} = useSelector((store)=>store.cart)
+  const cartItems = useSelector(store=>store.cart)
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
     < Container fluid>
@@ -19,7 +19,7 @@ const NavbarPanel = () => {
         <Navbar.Toggle/>
         <Navbar.Collapse className='justify-content-end'>
             <Navbar.Text>
-            <Nav.Link to='/Cart' as={Link} >0</Nav.Link>
+            <Nav.Link to='/Cart' as={Link} >My bag {cartItems.length}</Nav.Link>
             </Navbar.Text>
         </Navbar.Collapse>
     </Container>
