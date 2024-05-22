@@ -8,6 +8,7 @@ import { add } from '../store/cartSlice'
 const Products = () => {
   const dispatch = useDispatch();
   const[product,getProduct]=useState([])
+
 useEffect(()=>{
   //api
   fetch('https://fakestoreapi.com/products')
@@ -16,8 +17,9 @@ useEffect(()=>{
 
 },[])
 
-const addToCart = ()=>{
-
+const addToCart = (product)=>{
+  //dispatch an add action
+  dispatch(add(product))
 }
 
   const cards = product.map(prod=> (
