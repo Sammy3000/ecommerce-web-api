@@ -26,7 +26,7 @@ useEffect(()=>{
         </Card.Text>
       </Card.Body>
       <Card.Footer>
-       <Button variant="primary">Add to Cart</Button>
+       <Button variant="primary" onClick={()=>addToCart(product)}>Add to Cart</Button>
       </Card.Footer>
     </Card>
 
