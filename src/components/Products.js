@@ -3,8 +3,10 @@ import { useState,useEffect } from 'react'
 import { Card } from 'react-bootstrap'
 import {Button} from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
+import { add } from '../store/cartSlice'
 
 const Products = () => {
+  const dispatch = useDispatch()
   const[product,getProduct]=useState([])
 useEffect(()=>{
   //api
