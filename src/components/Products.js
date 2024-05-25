@@ -2,9 +2,8 @@ import React from 'react'
 import { useState,useEffect } from 'react'
 import { Card } from 'react-bootstrap'
 import {Button} from 'react-bootstrap'
-import { useDispatch,useSelector } from 'react-redux'
+import { useDispatch} from 'react-redux'
 import { add } from '../store/cartSlice'
-import { addition } from '../store/dummySlice'
 
 
 const Products = () => {
@@ -23,10 +22,6 @@ const addToCart = (product)=>{
   //dispatch an add action
   dispatch(add(product))
 }
-const added = useSelector(state => state.add)
-const increaseCount = ()=>{
-  dispatch (addition())
-}
 
   const cards = product.map(prod=> (
     <div className='col-md-3'>
@@ -44,7 +39,6 @@ const increaseCount = ()=>{
        <Button variant="primary" onClick={()=>addToCart(product)}>Add to Cart</Button>
       </Card.Footer>
     </Card>
-    <Button variant="primary" onClick={()=>increaseCount()}>You have clicked {added} times</Button>
     </div>
 
   ))
