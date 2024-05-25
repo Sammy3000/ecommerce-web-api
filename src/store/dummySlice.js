@@ -13,3 +13,4 @@ const dummy = createSlice({
 
 
 })
+export const {addition} = dummy.actions
