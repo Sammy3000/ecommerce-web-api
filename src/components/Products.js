@@ -18,9 +18,9 @@ useEffect(()=>{
 
 },[])
 
-const addToCart = (product)=>{
+const addToCart = (products)=>{
   //dispatch an add action
-  dispatch(add(product))
+  dispatch(add(products))
 }
 
   const cards = product.map(prod=> (
