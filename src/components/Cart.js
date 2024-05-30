@@ -9,7 +9,7 @@ const Cart = ()=>{
     
 
     const removeToCart = (id)=>{
-       
+       dispatch(remove(id))
     }
 
     const cardRender = products.map(product=> (
