@@ -4,8 +4,11 @@ import {Button} from 'react-bootstrap'
 
 const Cart = ()=>{
     const products = useSelector(store=>store.cart)
-    const removeToCart = (id)=>{
+    const dispatch = useDispatch()
+    
 
+    const removeToCart = (id)=>{
+       
     }
 
     const cardRender = products.map(product=> (
