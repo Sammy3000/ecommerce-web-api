@@ -1,9 +1,12 @@
-import {useSelector} from 'react-redux'
+import {useSelector,useDispatch} from 'react-redux'
 import { Card } from 'react-bootstrap'
 import {Button} from 'react-bootstrap'
 
 const Cart = ()=>{
     const products = useSelector(store=>store.cart)
+    const removeToCart = (id)=>{
+
+    }
 
     const cardRender = products.map(product=> (
         <div className='col-md-12'>
@@ -18,7 +21,7 @@ const Cart = ()=>{
             </Card.Text>
           </Card.Body>
           <Card.Footer>
-           <Button variant="danger">Remove Item</Button>
+           <Button variant="danger" onClick={()=>removeToCart(product.id)}>Remove Item</Button>
           </Card.Footer>
         </Card>
         </div>
