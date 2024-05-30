@@ -25,7 +25,7 @@ const addToCart = (products)=>{
 
   const cards = product.map(prod=> (
     <div className='col-md-3'>
-      <Card key={prod.id} className='h-100'>
+      <Card key={product.id}  className='h-100'>
         <div className='text-center'>
           <Card.Img variant="top" src={prod.image} style = {{width:'100px' , height: '125px'}}/>
         </div>
