@@ -18,7 +18,7 @@ const Cart = ()=>{
             </Card.Text>
           </Card.Body>
           <Card.Footer>
-           <Button variant="primary">Remove Item</Button>
+           <Button variant="danger">Remove Item</Button>
           </Card.Footer>
         </Card>
         </div>
