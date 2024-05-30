@@ -1,6 +1,7 @@
 import {useSelector,useDispatch} from 'react-redux'
 import { Card } from 'react-bootstrap'
 import {Button} from 'react-bootstrap'
+import { remove } from '../store/cartSlice'
 
 const Cart = ()=>{
     const products = useSelector(store=>store.cart)
