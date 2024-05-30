@@ -6,7 +6,7 @@ const Cart = ()=>{
     const products = useSelector(store=>store.cart)
 
     const cards = products.map(prod=> (
-        <div className='col-md-3'>
+        <div className='col-md-12'>
           <Card key={prod.id} className='h-100'>
             <div className='text-center'>
               <Card.Img variant="top" src={prod.image} style = {{width:'100px' , height: '125px'}}/>
