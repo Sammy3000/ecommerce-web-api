@@ -18,3 +18,5 @@ const cartSlice = createSlice({
 
 export const {add,remove} = cartSlice.actions;
 export default cartSlice.reducer
+
+//thunk api is a middleware that can be used to handle side effects in redux toolkit eg. fetching data from external api
