@@ -13,8 +13,8 @@ const Cart = ()=>{
     }
 
     const cardRender = products.map(product=> (
-        <div className='col-md-12'>
-          <Card key={product.id}  className='h-100'>
+       
+          <Card key={product.id}  className='h-100,col-md-12'>
             <div className='text-center'>
               <Card.Img variant="top" src={product.image} style = {{width:'100px' , height: '125px'}}/>
             </div>
@@ -28,7 +28,7 @@ const Cart = ()=>{
            <Button variant="danger" onClick={()=>removeToCart(product.id)}>Remove Item</Button>
           </Card.Footer>
         </Card>
-        </div>
+       
     
       ))
 
