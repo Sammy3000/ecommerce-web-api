@@ -11,20 +11,22 @@ const Cart = () => {
   };
 
   const cardRender = products.map(({ id, image, title, price }) => (
-    <Card key={id} className="h-100 col-md-12">
-      <div className="text-center">
-        <Card.Img variant="top" src={image} style={{ width: '100px', height: '125px' }} />
-      </div>
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>
-          $: {price}
-        </Card.Text>
-      </Card.Body>
-      <Card.Footer>
-        <Button variant="danger" onClick={() => removeFromCart(id)}>Remove Item</Button>
-      </Card.Footer>
-    </Card>
+    <div key={id} className="col-md-12 mb-4"> {/* Added key here */}
+      <Card className="h-100">
+        <div className="text-center">
+          <Card.Img variant="top" src={image} style={{ width: '100px', height: '125px' }} />
+        </div>
+        <Card.Body>
+          <Card.Title>{title}</Card.Title>
+          <Card.Text>
+            $: {price}
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <Button variant="danger" onClick={() => removeFromCart(id)}>Remove Item</Button>
+        </Card.Footer>
+      </Card>
+    </div>
   ));
 
   return (
