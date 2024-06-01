@@ -1,43 +1,37 @@
-import {useSelector,useDispatch} from 'react-redux'
-import { Card } from 'react-bootstrap'
-import {Button} from 'react-bootstrap'
-import { remove } from '../store/cartSlice'
+import { useSelector, useDispatch } from 'react-redux';
+import { Card, Button } from 'react-bootstrap';
+import { remove } from '../store/cartSlice';
 
-const Cart = ()=>{
-    const products = useSelector(store=>store.cart)
-    const dispatch = useDispatch()
-    
+const Cart = () => {
+  const products = useSelector((store) => store.cart);
+  const dispatch = useDispatch();
 
-    const removeToCart = (id)=>{
-       dispatch(remove(id))
-    }
+  const removeFromCart = (id) => {
+    dispatch(remove(id));
+  };
 
-    const cardRender = products.map(product=> (
-       
-          <Card key={product.id}  className='h-100,col-md-12'>
-            <div className='text-center'>
-              <Card.Img variant="top" src={product.image} style = {{width:'100px' , height: '125px'}}/>
-            </div>
-          <Card.Body>
-            <Card.Title>{product.title}</Card.Title>
-            <Card.Text>
-              $: {product.price}
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-           <Button variant="danger" onClick={()=>removeToCart(product.id)}>Remove Item</Button>
-          </Card.Footer>
-        </Card>
-       
-    
-      ))
-
-    return(
-      <div className='row'>
-        {cardRender}
-
+  const cardRender = products.map(({ id, image, title, price }) => (
+    <Card key={id} className="h-100 col-md-12">
+      <div className="text-center">
+        <Card.Img variant="top" src={image} style={{ width: '100px', height: '125px' }} />
       </div>
-        
-    )
-}
-export default Cart
+      <Card.Body>
+        <Card.Title>{title}</Card.Title>
+        <Card.Text>
+          $: {price}
+        </Card.Text>
+      </Card.Body>
+      <Card.Footer>
+        <Button variant="danger" onClick={() => removeFromCart(id)}>Remove Item</Button>
+      </Card.Footer>
+    </Card>
+  ));
+
+  return (
+    <div className="row">
+      {cardRender}
+    </div>
+  );
+};
+
+export default Cart;
